@@ -1,0 +1,6 @@
+{
+  "characterId": "prob_single_char",
+  "questsByTier": [
+    { "tier": 0, "questIds": ["HQ_test_prob_01"] }
+  ]
+}

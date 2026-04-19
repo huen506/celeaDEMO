@@ -1,0 +1,9 @@
+{
+  "perks": [
+    { "perkId": "NT_01", "displayName": "中性加護一（佔位）", "pool": 1, "effectType": "PLACEHOLDER", "effectValue": 0 },
+    { "perkId": "NT_02", "displayName": "中性加護二（佔位）", "pool": 1, "effectType": "PLACEHOLDER", "effectValue": 0 },
+    { "perkId": "NT_03", "displayName": "中性加護三（佔位）", "pool": 1, "effectType": "PLACEHOLDER", "effectValue": 0 },
+    { "perkId": "NT_04", "displayName": "中性加護四（佔位）", "pool": 1, "effectType": "PLACEHOLDER", "effectValue": 0 },
+    { "perkId": "NT_05", "displayName": "中性加護五（佔位）", "pool": 1, "effectType": "PLACEHOLDER", "effectValue": 0 }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "characterId": "test_char",
+  "questsByTier": [
+    { "tier": 0, "questIds": ["HQ_test_fail_01"] },
+    { "tier": 1, "questIds": ["HQ_test_01", "HQ_test_02", "HQ_test_03"] },
+    { "tier": 2, "questIds": ["HQ_test_t2_01"] }
+  ]
+}

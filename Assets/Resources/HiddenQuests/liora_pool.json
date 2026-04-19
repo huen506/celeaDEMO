@@ -1,0 +1,6 @@
+{
+  "characterId": "liora",
+  "questsByTier": [
+    { "tier": 1, "questIds": ["HQ_liora_01"] }
+  ]
+}

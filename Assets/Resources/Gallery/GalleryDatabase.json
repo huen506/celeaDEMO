@@ -1,0 +1,11 @@
+{
+  "entries": [
+    {
+      "entryId": "CG_001",
+      "resourceKey": "Gallery/Images/CG_001",
+      "unlockEventId": "placeholder_event_id",
+      "isUnlocked": false,
+      "displayOrder": 1
+    }
+  ]
+}

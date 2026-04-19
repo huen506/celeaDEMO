@@ -1,0 +1,73 @@
+{
+  "dialogueId": "D001",
+  "startSegmentId": "S1",
+  "segments": [
+    {
+      "segmentId": "S1",
+      "lines": [
+        {
+          "speakerId": "draven",
+          "speakerDisplayName": "德拉文",
+          "text": "這條街比我想的還安靜。",
+          "voiceClipKey": "",
+          "isInnerThought": false,
+          "portraitFocusSlot": 0
+        },
+        {
+          "speakerId": "liora",
+          "speakerDisplayName": "莉歐拉",
+          "text": "晚上都這樣。白天才熱鬧。",
+          "voiceClipKey": "",
+          "isInnerThought": false,
+          "portraitFocusSlot": 1
+        },
+        {
+          "speakerId": "draven",
+          "speakerDisplayName": "",
+          "text": "（她說得很自然。好像在這裡待很久了。）",
+          "voiceClipKey": "",
+          "isInnerThought": true,
+          "portraitFocusSlot": 0
+        }
+      ],
+      "hasChoice": true,
+      "choices": [
+        {
+          "choiceId": "C001_A",
+          "text": "有趣。這種人最容易死在自己嘴巴上。",
+          "choiceCategory": 2,
+          "payloadKey": "choice_sin_observe"
+        },
+        {
+          "choiceId": "C001_B",
+          "text": "算了。今天不是為了這種事流血的日子。",
+          "choiceCategory": 1,
+          "payloadKey": "choice_neutral_pass"
+        },
+        {
+          "choiceId": "C001_C",
+          "text": "笑就好。笑就好。",
+          "choiceCategory": 0,
+          "payloadKey": "choice_virtue_smile"
+        }
+      ],
+      "nextSegmentId": "S2"
+    },
+    {
+      "segmentId": "S2",
+      "lines": [
+        {
+          "speakerId": "liora",
+          "speakerDisplayName": "莉歐拉",
+          "text": "你在看什麼？",
+          "voiceClipKey": "",
+          "isInnerThought": false,
+          "portraitFocusSlot": 1
+        }
+      ],
+      "hasChoice": false,
+      "choices": [],
+      "nextSegmentId": ""
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "perks": [
+    { "perkId": "VT_01", "displayName": "善端加護一（佔位）", "pool": 0, "effectType": "PLACEHOLDER", "effectValue": 0 },
+    { "perkId": "VT_02", "displayName": "善端加護二（佔位）", "pool": 0, "effectType": "PLACEHOLDER", "effectValue": 0 },
+    { "perkId": "VT_03", "displayName": "善端加護三（佔位）", "pool": 0, "effectType": "PLACEHOLDER", "effectValue": 0 },
+    { "perkId": "VT_04", "displayName": "善端加護四（佔位）", "pool": 0, "effectType": "PLACEHOLDER", "effectValue": 0 },
+    { "perkId": "VT_05", "displayName": "善端加護五（佔位）", "pool": 0, "effectType": "PLACEHOLDER", "effectValue": 0 }
+  ]
+}

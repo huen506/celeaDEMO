@@ -1,0 +1,22 @@
+{
+  "dialogueId": "D002",
+  "startSegmentId": "S1",
+  "segments": [
+    {
+      "segmentId": "S1",
+      "lines": [
+        {
+          "speakerId": "npc_merchant",
+          "speakerDisplayName": "商人",
+          "text": "今天不做生意。",
+          "voiceClipKey": "",
+          "isInnerThought": false,
+          "portraitFocusSlot": 0
+        }
+      ],
+      "hasChoice": false,
+      "choices": [],
+      "nextSegmentId": ""
+    }
+  ]
+}

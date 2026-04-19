@@ -1,0 +1,88 @@
+{
+  "quests": [
+    {
+      "questId": "HQ_liora_01",
+      "characterId": "liora",
+      "affinityTierRequired": 1,
+      "triggerDialogueId": "D_HQ_liora_01",
+      "completionCondition": "placeholder",
+      "timeLimitDays": -1,
+      "successAffinityDelta": 1,
+      "failureAffinityDelta": -1,
+      "rewardKey": "",
+      "isUsed": false
+    },
+    {
+      "questId": "HQ_test_01",
+      "characterId": "test_char",
+      "affinityTierRequired": 1,
+      "triggerDialogueId": "D_HQ_test_01",
+      "completionCondition": "placeholder",
+      "timeLimitDays": -1,
+      "successAffinityDelta": 2,
+      "failureAffinityDelta": -2,
+      "rewardKey": "",
+      "isUsed": false
+    },
+    {
+      "questId": "HQ_test_02",
+      "characterId": "test_char",
+      "affinityTierRequired": 1,
+      "triggerDialogueId": "D_HQ_test_02",
+      "completionCondition": "placeholder",
+      "timeLimitDays": -1,
+      "successAffinityDelta": 1,
+      "failureAffinityDelta": -1,
+      "rewardKey": "",
+      "isUsed": false
+    },
+    {
+      "questId": "HQ_test_03",
+      "characterId": "test_char",
+      "affinityTierRequired": 1,
+      "triggerDialogueId": "D_HQ_test_03",
+      "completionCondition": "placeholder",
+      "timeLimitDays": -1,
+      "successAffinityDelta": 1,
+      "failureAffinityDelta": -1,
+      "rewardKey": "",
+      "isUsed": false
+    },
+    {
+      "questId": "HQ_test_t2_01",
+      "characterId": "test_char",
+      "affinityTierRequired": 2,
+      "triggerDialogueId": "D_HQ_test_t2_01",
+      "completionCondition": "placeholder",
+      "timeLimitDays": -1,
+      "successAffinityDelta": 1,
+      "failureAffinityDelta": -1,
+      "rewardKey": "",
+      "isUsed": false
+    },
+    {
+      "questId": "HQ_test_fail_01",
+      "characterId": "test_char",
+      "affinityTierRequired": 0,
+      "triggerDialogueId": "D_HQ_test_fail_01",
+      "completionCondition": "placeholder",
+      "timeLimitDays": 1,
+      "successAffinityDelta": 1,
+      "failureAffinityDelta": -1,
+      "rewardKey": "",
+      "isUsed": false
+    },
+    {
+      "questId": "HQ_test_prob_01",
+      "characterId": "prob_single_char",
+      "affinityTierRequired": 0,
+      "triggerDialogueId": "D_HQ_test_prob",
+      "completionCondition": "placeholder",
+      "timeLimitDays": -1,
+      "successAffinityDelta": 1,
+      "failureAffinityDelta": -1,
+      "rewardKey": "",
+      "isUsed": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "mercenaries": [
+    { "mercenaryId": "M_COM_01", "displayName": "共用傭兵一（佔位）", "preferredMoralTiers": ["Virtue","Neutral","Sin"], "isAlive": true, "routeExclusive": "", "baseAttack": 10, "baseDefense": 5, "baseHp": 100 },
+    { "mercenaryId": "M_COM_02", "displayName": "共用傭兵二（佔位）", "preferredMoralTiers": ["Virtue","Neutral"], "isAlive": true, "routeExclusive": "", "baseAttack": 12, "baseDefense": 4, "baseHp": 90 },
+    { "mercenaryId": "M_COM_03", "displayName": "共用傭兵三（佔位）", "preferredMoralTiers": ["Neutral","Sin"], "isAlive": true, "routeExclusive": "", "baseAttack": 8, "baseDefense": 8, "baseHp": 110 },
+    { "mercenaryId": "M_COM_04", "displayName": "共用傭兵四（佔位）", "preferredMoralTiers": ["Virtue","Neutral","Sin"], "isAlive": true, "routeExclusive": "", "baseAttack": 10, "baseDefense": 6, "baseHp": 100 },
+    { "mercenaryId": "M_COM_05", "displayName": "共用傭兵五（佔位）", "preferredMoralTiers": ["Sin"], "isAlive": true, "routeExclusive": "", "baseAttack": 15, "baseDefense": 3, "baseHp": 85 },
+    { "mercenaryId": "M_COM_06", "displayName": "共用傭兵六（佔位）", "preferredMoralTiers": ["Virtue"], "isAlive": true, "routeExclusive": "", "baseAttack": 9, "baseDefense": 7, "baseHp": 105 },
+    { "mercenaryId": "M_TECH_01", "displayName": "科技線傭兵一（佔位）", "preferredMoralTiers": ["Virtue","Neutral","Sin"], "isAlive": true, "routeExclusive": "Tech", "baseAttack": 11, "baseDefense": 5, "baseHp": 95 },
+    { "mercenaryId": "M_TECH_02", "displayName": "科技線傭兵二（佔位）", "preferredMoralTiers": ["Virtue","Neutral","Sin"], "isAlive": true, "routeExclusive": "Tech", "baseAttack": 10, "baseDefense": 6, "baseHp": 100 },
+    { "mercenaryId": "M_NAT_01", "displayName": "自然線傭兵一（佔位）", "preferredMoralTiers": ["Virtue","Neutral","Sin"], "isAlive": true, "routeExclusive": "Nature", "baseAttack": 10, "baseDefense": 5, "baseHp": 100 },
+    { "mercenaryId": "M_NAT_02", "displayName": "自然線傭兵二（佔位）", "preferredMoralTiers": ["Virtue","Neutral","Sin"], "isAlive": true, "routeExclusive": "Nature", "baseAttack": 10, "baseDefense": 5, "baseHp": 100 },
+    { "mercenaryId": "M_NEU_01", "displayName": "中立線傭兵一（佔位）", "preferredMoralTiers": ["Virtue","Neutral","Sin"], "isAlive": true, "routeExclusive": "Neutral", "baseAttack": 10, "baseDefense": 5, "baseHp": 100 },
+    { "mercenaryId": "M_NEU_02", "displayName": "中立線傭兵二（佔位）", "preferredMoralTiers": ["Virtue","Neutral","Sin"], "isAlive": true, "routeExclusive": "Neutral", "baseAttack": 10, "baseDefense": 5, "baseHp": 100 }
+  ]
+}

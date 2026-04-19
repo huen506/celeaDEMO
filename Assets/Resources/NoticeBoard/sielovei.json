@@ -1,0 +1,30 @@
+{
+  "townId": "sielovei",
+  "quests": [
+    {
+      "questId": "NB_sielovei_01",
+      "townId": "sielovei",
+      "title": "委託標題佔位",
+      "steps": [
+        {
+          "stepIndex": 0,
+          "description": "第一步描述佔位",
+          "completionCondition": "placeholder",
+          "stepState": "Locked"
+        },
+        {
+          "stepIndex": 1,
+          "description": "第二步描述佔位",
+          "completionCondition": "placeholder",
+          "stepState": "Locked"
+        }
+      ],
+      "timeLimitDays": -1,
+      "questState": "Unavailable",
+      "currentStepIndex": 0,
+      "acceptedDay": 0,
+      "isMarked": false,
+      "consequenceKey": ""
+    }
+  ]
+}

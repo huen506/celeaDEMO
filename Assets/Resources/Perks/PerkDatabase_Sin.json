@@ -1,0 +1,9 @@
+{
+  "perks": [
+    { "perkId": "SN_01", "displayName": "惡端加護一（佔位）", "pool": 2, "effectType": "PLACEHOLDER", "effectValue": 0 },
+    { "perkId": "SN_02", "displayName": "惡端加護二（佔位）", "pool": 2, "effectType": "PLACEHOLDER", "effectValue": 0 },
+    { "perkId": "SN_03", "displayName": "惡端加護三（佔位）", "pool": 2, "effectType": "PLACEHOLDER", "effectValue": 0 },
+    { "perkId": "SN_04", "displayName": "惡端加護四（佔位）", "pool": 2, "effectType": "PLACEHOLDER", "effectValue": 0 },
+    { "perkId": "SN_05", "displayName": "惡端加護五（佔位）", "pool": 2, "effectType": "PLACEHOLDER", "effectValue": 0 }
+  ]
+}
