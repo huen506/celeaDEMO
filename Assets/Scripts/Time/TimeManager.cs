@@ -175,7 +175,7 @@ namespace Celea
         private void PublishTimeProgress()
         {
             var data = new EventData();
-            data.Set("slot", _currentSlot.ToString());
+            data.Set("timePeriod", _currentSlot.ToString());
             EventManager.Instance.Publish(GameEvents.ON_TIME_PROGRESS, data);
             Debug.Log($"[TimeManager] 時段推進 → {_currentSlot}（第 {_dayCount} 天）");
         }

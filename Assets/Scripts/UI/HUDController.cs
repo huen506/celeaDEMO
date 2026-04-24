@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace Celea
 {
@@ -11,9 +13,9 @@ namespace Celea
     public class HUDController : MonoBehaviour
     {
         [Header("左上角 - 時間與地點（佔位符）")]
-        [SerializeField] private Text timeText;        // 當前時間
-        [SerializeField] private Text dateText;        // 當前日期
-        [SerializeField] private Text locationText;    // 當前地點名稱
+        [SerializeField] private TextMeshProUGUI timeText;        // 當前時間
+        [SerializeField] private TextMeshProUGUI dateText;        // 當前日期
+        [SerializeField] private TextMeshProUGUI locationText;    // 當前地點名稱
 
         [Header("右下角 - 角色立繪（佔位符）")]
         [SerializeField] private Image characterPortrait;  // 角色立繪圖片
@@ -24,6 +26,63 @@ namespace Celea
         [SerializeField] private Sprite portraitMinorDamage;  // 75%  輕微受損
         [SerializeField] private Sprite portraitMidDamage;    // 50%  中度受損
         [SerializeField] private Sprite portraitHeavyDamage;  // 25%  重度受損
+
+        [Header("選單按鈕")]
+        [SerializeField] private Button menuButton;
+
+        [Header("時段換圖（佔位符）")]
+        [SerializeField] private Image timeFrameImage;
+        [SerializeField] private Sprite spriteDawn;
+        [SerializeField] private Sprite spriteNoon;
+        [SerializeField] private Sprite spriteDusk;
+        [SerializeField] private Sprite spriteNight;
+        [SerializeField] private Sprite spriteMidnight; // 預設拖入夜晚素材，之後可獨立替換
+
+        private void Start()
+        {
+            if (menuButton != null)
+                menuButton.onClick.AddListener(OnMenuButtonClicked);
+        }
+
+        private void OnEnable()
+        {
+            EventManager.Instance.Subscribe(GameEvents.ON_TIME_PROGRESS, OnTimeProgress);
+        }
+
+        private void OnDisable()
+        {
+            EventManager.Instance.Unsubscribe(GameEvents.ON_TIME_PROGRESS, OnTimeProgress);
+        }
+
+        private void OnDestroy()
+        {
+            if (menuButton != null)
+                menuButton.onClick.RemoveListener(OnMenuButtonClicked);
+        }
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+                UIManager.Instance.OpenMenu();
+        }
+
+        private void OnMenuButtonClicked()
+        {
+            UIManager.Instance.OpenMenu();
+        }
+
+        private void OnTimeProgress(EventData data)
+        {
+            if (timeFrameImage == null) return;
+            switch (data.Get<string>("timePeriod"))
+            {
+                case "Dawn":     timeFrameImage.sprite = spriteDawn;     break;
+                case "Noon":     timeFrameImage.sprite = spriteNoon;     break;
+                case "Dusk":     timeFrameImage.sprite = spriteDusk;     break;
+                case "Night":    timeFrameImage.sprite = spriteNight;    break;
+                case "Midnight": timeFrameImage.sprite = spriteMidnight; break;
+            }
+        }
 
         /// <summary>
         /// 更新左上角時間與地點資訊。
