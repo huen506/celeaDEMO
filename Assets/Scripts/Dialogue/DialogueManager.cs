@@ -87,7 +87,7 @@ namespace Celea
 
             // 通知 UIManager 切換到對話模式
             var modeData = new EventData();
-            modeData.Set("mode", "Dialogue");
+            modeData.Set("mode", UIManager.UIMode.Dialogue);
             EventManager.Instance.Publish(GameEvents.ON_UI_MODE_CHANGE, modeData);
 
             _flowController.StartDialogue(data);
@@ -144,7 +144,7 @@ namespace Celea
 
             // 通知 UIManager 切換回自由行動模式
             var modeData = new EventData();
-            modeData.Set("mode", "FreeRoam");
+            modeData.Set("mode", UIManager.UIMode.FreeRoam);
             EventManager.Instance.Publish(GameEvents.ON_UI_MODE_CHANGE, modeData);
         }
     }

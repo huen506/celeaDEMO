@@ -15,14 +15,14 @@ namespace Celea
         private void OnEnable()
         {
             EventManager.Instance.Subscribe(GameEvents.ON_CHOICE_MADE,  OnChoiceMade);
-            EventManager.Instance.Subscribe(GameEvents.ON_CHAPTER_END,  OnChapterEnd);
+            EventManager.Instance.Subscribe(GameEvents.ON_CHAPTER_CLEARED,  OnChapterCleared);
             EventManager.Instance.Subscribe(GameEvents.ON_DAY_END,      OnDayEnd);
         }
 
         private void OnDisable()
         {
             EventManager.Instance.Unsubscribe(GameEvents.ON_CHOICE_MADE,  OnChoiceMade);
-            EventManager.Instance.Unsubscribe(GameEvents.ON_CHAPTER_END,  OnChapterEnd);
+            EventManager.Instance.Unsubscribe(GameEvents.ON_CHAPTER_CLEARED,  OnChapterCleared);
             EventManager.Instance.Unsubscribe(GameEvents.ON_DAY_END,      OnDayEnd);
         }
 
@@ -39,7 +39,7 @@ namespace Celea
                 Debug.LogWarning($"[FlagManager] 無法解析 choiceCategory：{categoryStr}");
         }
 
-        private void OnChapterEnd(EventData data)
+        private void OnChapterCleared(EventData data)
         {
             _situationFlags.EvaluateChapterEnd();
         }

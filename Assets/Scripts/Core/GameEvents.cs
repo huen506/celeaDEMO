@@ -24,8 +24,6 @@ namespace Celea
         // 場景
         public const string ON_SCENE_ENTER                  = "ON_SCENE_ENTER";
 
-        // 章節
-        public const string ON_CHAPTER_END                  = "ON_CHAPTER_END";
 
         // 戰鬥
         public const string ON_COMBAT_START                 = "ON_COMBAT_START";
