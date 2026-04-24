@@ -63,11 +63,21 @@ namespace Celea
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Escape))
-                UIManager.Instance.OpenMenu();
+                OpenMenuSafely();
         }
 
         private void OnMenuButtonClicked()
         {
+            OpenMenuSafely();
+        }
+
+        private void OpenMenuSafely()
+        {
+            if (UIManager.Instance == null)
+            {
+                Debug.LogError("[HUDController] UIManager.Instance is null，無法開啟選單。");
+                return;
+            }
             UIManager.Instance.OpenMenu();
         }
 
