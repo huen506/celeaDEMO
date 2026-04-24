@@ -16,9 +16,9 @@ namespace Celea
         /// <summary>顯示選擇自白。由 DialogueManager 在進入 Choosing 狀態時呼叫。</summary>
         public void ShowChoices(List<DialogueChoice> choices)
         {
-            // 通知 UIManager 進入選擇模式（畫面暗化）
+            // 通知 UIManager 維持對話模式（選項是對話流程的一部分）
             var enterData = new EventData();
-            enterData.Set("mode", "Choice");
+            enterData.Set("mode", UIManager.UIMode.Dialogue);
             EventManager.Instance.Publish(GameEvents.ON_UI_MODE_CHANGE, enterData);
 
             // 佔位：實際 UI 顯示由 UIManager / DialogueUI 層負責
@@ -43,9 +43,9 @@ namespace Celea
             var choice = _pendingChoices[index];
             _pendingChoices = null;
 
-            // 通知 UIManager 離開選擇模式（畫面恢復）
+            // 通知 UIManager 維持對話模式（繼續對話流程）
             var exitData = new EventData();
-            exitData.Set("mode", "Dialogue");
+            exitData.Set("mode", UIManager.UIMode.Dialogue);
             EventManager.Instance.Publish(GameEvents.ON_UI_MODE_CHANGE, exitData);
 
             OnChoiceSelected?.Invoke(choice);
