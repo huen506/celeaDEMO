@@ -12,3 +12,16 @@ MemoryCaptures/
 *.sln
 .vscode/
 .claude/
+
+# 素材（美術資源）— 不進版控
+*.png
+*.jpg
+*.jpeg
+*.psd
+*.mp3
+*.wav
+*.ogg
+*.mp4
+*.fbx
+# meta 檔保留（Unity 需要）
+!*.meta

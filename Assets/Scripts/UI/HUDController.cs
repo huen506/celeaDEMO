@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 using TMPro;
 
 namespace Celea
@@ -62,23 +63,26 @@ namespace Celea
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
-                OpenMenuSafely();
+            if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+                ToggleMenuSafely();
         }
 
         private void OnMenuButtonClicked()
         {
-            OpenMenuSafely();
+            ToggleMenuSafely();
         }
 
-        private void OpenMenuSafely()
+        private void ToggleMenuSafely()
         {
             if (UIManager.Instance == null)
             {
-                Debug.LogError("[HUDController] UIManager.Instance is null，無法開啟選單。");
+                Debug.LogError("[HUDController] UIManager.Instance is null，無法操作選單。");
                 return;
             }
-            UIManager.Instance.OpenMenu();
+            if (UIManager.Instance.CurrentMode == UIManager.UIMode.Menu)
+                UIManager.Instance.CloseMenu();
+            else
+                UIManager.Instance.OpenMenu();
         }
 
         private void OnTimeProgress(EventData data)
